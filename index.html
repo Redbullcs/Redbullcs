@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redbullcs | Enlaces Oficiales</title>
+    
+    <link rel="icon" type="image/png" href="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=256">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --card-bg: rgba(22, 22, 22, 0.75);
+            --text-white: #ffffff;
+            --text-gray: #a0a0a0;
+            --border-glow: rgba(255, 255, 255, 0.1);
+            --whatsapp-color: #25d366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-dark);
+            /* Textura de fondo sutil que emula la pizarra/tiza de tu banner */
+            background-image: 
+                radial-gradient(rgba(255,255,255,0.03) 1px, transparent 0),
+                radial-gradient(rgba(255,255,255,0.02) 1px, transparent 0);
+            background-size: 24px 24px;
+            background-position: 0 0, 12px 12px;
+            color: var(--text-white);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+        }
+
+        .container {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            width: 100%;
+            max-width: 480px;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            padding-bottom: 35px;
+        }
+
+        /* Banner de Cabecera */
+        .banner-header {
+            width: 100%;
+            height: auto;
+            max-height: 140px;
+            object-fit: cover;
+            display: block;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* Info del Perfil */
+        .profile-info {
+            padding: 25px 25px 15px;
+        }
+
+        h1 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 2rem;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .bio {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        /* Enlaces */
+        .links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 0 24px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 14px;
+            color: var(--text-white);
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 600;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .link-item span {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .link-item i:first-child {
+            font-size: 1.3rem;
+            width: 24px;
+            text-align: center;
+        }
+
+        .chevron {
+            font-size: 0.9rem;
+            opacity: 0.3;
+            transition: transform 0.25s ease;
+        }
+
+        /* Efectos Hover */
+        .link-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .link-item:hover .chevron {
+            opacity: 0.8;
+            transform: translateX(3px);
+        }
+
+        /* Botón Especial Destacado de WhatsApp */
+        .whatsapp-btn {
+            background: rgba(37, 211, 102, 0.1) !important;
+            border: 1px solid rgba(37, 211, 102, 0.3) !important;
+            color: var(--whatsapp-color) !important;
+            margin-bottom: 8px; /* Separación extra */
+        }
+
+        .whatsapp-btn:hover {
+            background: rgba(37, 211, 102, 0.2) !important;
+            border-color: var(--whatsapp-color) !important;
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.15);
+        }
+
+        /* Iconos de marcas con sus colores oficiales en hover */
+        .link-item:hover .fa-kickstarter { color: #53fc18; }
+        .link-item:hover .fa-twitch { color: #a970ff; }
+        .link-item:hover .fa-instagram { color: #e1306c; }
+        .link-item:hover .fa-tiktok { color: #00f2fe; }
+        .link-item:hover .fa-x-twitter { color: #ffffff; }
+        .link-item:hover .fa-threads { color: #ffffff; }
+        .link-item:hover .fa-tumblr { color: #35465c; }
+        .link-item:hover .fa-reddit-alien { color: #ff4500; }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.15);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img class="banner-header" src="https://i.ibb.co/30Bshj9/BANNER.jpg" alt="Redbullcs Banner">
+
+        <div class="profile-info">
+            <h1>Redbullcs</h1>
+            <p class="bio">Soy Redbullcs y ayudo a streamers</p>
+        </div>
+
+        <div class="links-grid">
+            
+            <a href="https://wa.me/946032413" target="_blank" class="link-item whatsapp-btn">
+                <span><i class="fab fa-whatsapp"></i> Hablemos por WhatsApp</span>
+                <i class="fas fa-chevron-right chevron"></i>
+            </a>
+
+            <a href="https://kick.com/redbullcs" target="_blank" class="link-item">
+                <span><i class="fab fa-kickstarter"></i> Kick</span>
+                <i class="fas fa-chevron-right chevron"></i>
+            </a>
+
+            <a href="https://twitch.tv/redbullcstv" target="_blank" class="link-item">
+                <span><i class="fab fa-twitch"></i> Twitch</span>
+                <i class="fas fa-chevron-right chevron"></i>
+            </a>
+
+            <a href="https://tiktok.com/@redbullcstv" target="_blank" class="link-item">
+                <span><i class="fab fa-tiktok"></i> TikTok (@redbullcstv)</span>
+                <i class="fas fa-chevron-right chevron"></i>
+            </a>
+
+            <a href="https://tiktok.com/@redbullcs" target="_blank" class="link-item">
+                <span><i class="fab fa-tiktok"></i> TikTok Secundario (@redbullcs)</span>
+                <i class="fas fa-chevron-right chevron"></i>
+            </a>
+
+            <a href="https://instagram.com/redbullcstv" target="_blank" class="link-item">
+                <span><i class="fab fa-instagram"></i> Instagram</span>
+                <i class="fas fa-chevron-right chevron"></i>
+            </a>
+
+            <a href="https://x.com/redbullcstv" target="_blank" class="link-item">
+                <span><i class="fab fa-x-twitter"></i> Twitter / X</span>
+                <i class="fas fa-chevron-right chevron"></i>
+            </a>
+
+            <a href="https://threads.net/@redbullcstv" target="_blank" class="link-item">
+                <span><i class="fab fa-threads"></i> Threads</span>
+                <i class="fas fa-chevron-right chevron"></i>
+            </a>
+
+            <a href="https://redbullcs.tumblr.com" target="_blank" class="link-item">
+                <span><i class="fab fa-tumblr"></i> Tumblr</span>
+                <i class="fas fa-chevron-right chevron"></i>
+            </a>
+
+            <a href="https://reddit.com/user/redbullcs" target="_blank" class="link-item">
+                <span><i class="fab fa-reddit-alien"></i> Reddit</span>
+                <i class="fas fa-chevron-right chevron"></i>
+            </a>
+
+            <a href="https://vsco.co/redbullcs" target="_blank" class="link-item">
+                <span><i class="fa-solid fa-camera"></i> VSCO</span>
+                <i class="fas fa-chevron-right chevron"></i>
+            </a>
+
+        </div>
+
+        <footer>
+            &copy; 2026 Redbullcs. Todos los derechos reservados.
+        </footer>
+    </div>
+
+</body>
+</html>
