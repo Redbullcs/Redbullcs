@@ -9,7 +9,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -19,7 +19,6 @@
             --card-bg: rgba(22, 22, 22, 0.75);
             --text-white: #ffffff;
             --text-gray: #a0a0a0;
-            --border-glow: rgba(255, 255, 255, 0.1);
             --whatsapp-color: #25d366;
         }
 
@@ -32,7 +31,6 @@
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: var(--bg-dark);
-            /* Textura de fondo sutil que emula la pizarra/tiza de tu banner */
             background-image: 
                 radial-gradient(rgba(255,255,255,0.03) 1px, transparent 0),
                 radial-gradient(rgba(255,255,255,0.02) 1px, transparent 0);
@@ -60,7 +58,6 @@
             padding-bottom: 35px;
         }
 
-        /* Banner de Cabecera */
         .banner-header {
             width: 100%;
             height: auto;
@@ -70,13 +67,11 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
-        /* Info del Perfil */
         .profile-info {
             padding: 25px 25px 15px;
         }
 
         h1 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
             font-weight: 800;
             font-size: 2rem;
             letter-spacing: -0.5px;
@@ -91,7 +86,6 @@
             margin-bottom: 15px;
         }
 
-        /* Enlaces */
         .links-grid {
             display: flex;
             flex-direction: column;
@@ -132,7 +126,6 @@
             transition: transform 0.25s ease;
         }
 
-        /* Efectos Hover */
         .link-item:hover {
             background: rgba(255, 255, 255, 0.08);
             border-color: rgba(255, 255, 255, 0.2);
@@ -144,12 +137,11 @@
             transform: translateX(3px);
         }
 
-        /* Botón Especial Destacado de WhatsApp */
         .whatsapp-btn {
             background: rgba(37, 211, 102, 0.1) !important;
             border: 1px solid rgba(37, 211, 102, 0.3) !important;
             color: var(--whatsapp-color) !important;
-            margin-bottom: 8px; /* Separación extra */
+            margin-bottom: 8px;
         }
 
         .whatsapp-btn:hover {
@@ -158,7 +150,6 @@
             box-shadow: 0 0 15px rgba(37, 211, 102, 0.15);
         }
 
-        /* Iconos de marcas con sus colores oficiales en hover */
         .link-item:hover .fa-kickstarter { color: #53fc18; }
         .link-item:hover .fa-twitch { color: #a970ff; }
         .link-item:hover .fa-instagram { color: #e1306c; }
@@ -180,7 +171,7 @@
 <body>
 
     <div class="container">
-        <img class="banner-header" src="https://i.ibb.co/30Bshj9/BANNER.jpg" alt="Redbullcs Banner">
+        <img class="banner-header" src="BANNER.jpg" alt="Redbullcs Banner">
 
         <div class="profile-info">
             <h1>Redbullcs</h1>
