@@ -30,18 +30,30 @@
 
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: var(--bg-dark);
+            background-color: #0b0b0b;
+            /* Textura grunge que emula el fondo de tu banner + Luces de neón difuminadas */
             background-image: 
-                radial-gradient(rgba(255,255,255,0.03) 1px, transparent 0),
-                radial-gradient(rgba(255,255,255,0.02) 1px, transparent 0);
-            background-size: 24px 24px;
-            background-position: 0 0, 12px 12px;
+                radial-gradient(at 15% 20%, rgba(83, 252, 24, 0.08) 0px, transparent 40%),
+                radial-gradient(at 85% 80%, rgba(255, 255, 255, 0.05) 0px, transparent 40%),
+                radial-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 0),
+                radial-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 0);
+            background-size: 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+            background-position: 0 0, 0 0, 0 0, 16px 16px;
             color: var(--text-white);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 30px 15px;
+            padding: 40px 15px;
+            position: relative;
+            overflow-x: hidden;
+            animation: backgroundGlow 10s ease-in-out infinite alternate;
+        }
+
+        /* Animación suave para que las luces del fondo tengan "vida" y se muevan solas */
+        @keyframes backgroundGlow {
+            0% { background-position: 0% 0%, 0% 0%, 0 0, 16px 16px; }
+            100% { background-position: 5% 5%, -5% -5%, 0 0, 16px 16px; }
         }
 
         .container {
